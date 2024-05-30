@@ -1,14 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Practica</title>
+    <title>Plantilla Minimalista</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="principal">
-    <h2>Hola Node js</h2>
-
-    <script src="./js/index.js"></script>
+<body>
+    <header>
+        <nav>
+            <button id="inicio">Inicio</button>
+            <button id="registrar">Registrar</button>
+            <button id="verificar">Verificar</button>
+            <button id="eliminar">Eliminar</button>
+        </nav>
+    </header>
+    <aside>
+        <ul>
+            <li><button class="sidebar-btn" data-action="registrar">Registrar</button></li>
+            <li><button class="sidebar-btn" data-action="verificar">Verificar</button></li>
+            <li><button class="sidebar-btn" data-action="eliminar">Eliminar</button></li>
+        </ul>
+    </aside>
+    <main>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Datos de ejemplo -->
+                <tr>
+                    <td>Producto 1</td>
+                    <td>10</td>
+                    <td>$5.00</td>
+                </tr>
+                <tr>
+                    <td>Producto 2</td>
+                    <td>20</td>
+                    <td>$10.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; Derechos Reservados</p>
+    </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
